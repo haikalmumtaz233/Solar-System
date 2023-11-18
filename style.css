@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*navbar*/
+header {
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #06113C;
+}
+
+#navbar-icon {
+    margin: 20px;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#navbar-icon:hover {
+    filter: brightness(120%);
+}
+
+#navbar-group {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+nav .btn-navbar {
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 20px;
+    font-size: 20px;
+    font-family: 'Potra Light', sans-serif;
+    color: white;
+    transition: 0.2s;
+}
+
+nav .btn-navbar:hover {
+    background-color: #E04D01;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+/*home*/
+#home {
+    text-align: center;
+    position: relative;
+}
+
+#home-background {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(40%);
+}
+
+#home-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#home-text h1 {
+    font-family: 'Potra Light', sans-serif;
+    font-size: 70px;
+    letter-spacing: 10px;
+    margin: 20px 0;
+}
+
+#home-text p {
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 20px;
+    margin: 40px 0;
+}
+
+#home-text-btn {
+    font-family: 'Amatic SC', sans-serif;
+    background-color: #143F6B;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#home-text-btn:hover {
+    background-color: #40DFEF;
+    color: black;
+}
+
+/*solar system*/
+#solar-system {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+    background: linear-gradient(112deg, rgba(14,14,29,1) 2%, rgba(28,28,69,1) 24%, rgba(8,8,85,1) 60%, rgba(87,76,76,1) 100%);
+    color: white
+}
+
+#solar-system-header {
+    font-family: 'Cosmogen Free Trial', sans-serif;
+    margin: 20px 0 0 0;
+    font-size: 60px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+#solar-system-gif {
+    border-radius: 50%;
+    margin: 40px 0;
+    transition: 0.2s;
+}
+
+#solar-system-gif:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+    transform: scale(105%);
+}
+
+#solar-system p{
+    background-color: #001E6C;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    width: 60%;
+}
+
+/*planets*/
+#planets {
+    display: flex;
+    flex-direction: column;
+    background: url('Assets/planets-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px 0;
+}
+
+#planet-header {
+    font-family: 'Cosmogen Free Trial', sans-serif;
+    margin: 20px 0;
+    color: #4B7BE5;
+    font-size: 60px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.planet1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.planet2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+    width: 50%;
+    transform: translate(95%,0);
+    margin: 20px auto;
+}
+
+.planet1 h1, .planet2 h1 {
+    font-family: 'a Astro Space', sans-serif;
+    padding: 10px;
+    font-size: 40px;
+    color: #205375;
+}
+
+.planet1 figure {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.planet1 img, .planet2 img {
+    width: 128px;
+}
+
+.planet2 figure {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.planet1 p, .planet2 p {
+    margin-bottom: 20px;
+}
+
+#planet-btn {
+    font-family: 'Amatic SC', sans-serif;
+    background-color: #143F6B;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#planet-btn:hover {
+    background-color: #40DFEF;
+    color: black;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 20px;
+}
+
+/*about*/
+#about {
+    margin: 0 auto;
+    background: linear-gradient(112deg, rgba(2,2,51,1) 60%, rgba(251,254,255,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#about-header {
+    color: tomato;
+    font-family: 'Cosmogen Free Trial', sans-serif;
+    margin: 20px 20px 0 20px;
+    letter-spacing: 10px;
+    font-size: 60px;
+}
+
+#about-text {
+    color: white;
+}
+
+#about-desc {
+    transform: translate(20%, 40%);
+    width: 70%;
+}
+
+#about-desc h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    margin: 0 0 10px 0;
+    color: #6FDFDF;
+}
+
+#about-desc h2 {
+    font-family: 'Potra Light', sans-serif;
+    margin: 0 0 20px 0;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+#about-desc p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about-desc ul {
+    list-style-type: none;
+    display: flex;
+    margin: 20px 0 0 0;
+}
+
+#about-desc li {
+    background-color: tomato;
+    margin: 0 0 0 10px;
+    border-radius: 45%;
+    transition: 0.3s;
+}
+
+#about-desc li:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+#about-img {
+    height: 500px;  
+    margin: 0 20px;
+}
+
+footer {
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer p {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    /*navbar*/
+    #navbar-icon {
+        width: 35px;
+    }
+
+    nav .btn-navbar {
+        margin: 0 15px;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .navbar-group--close {
+        display: none!important;
+    }
+
+    /*home*/
+    #home-text h1 {
+        font-size: 50px;
+        margin: 20px 0;
+    }
+    
+    #home-text p {
+        font-size: 15px;
+        margin: 30px 0;
+    }
+    
+    #home-text-btn {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    /*solar-system*/    
+    #solar-system-header {
+        font-size: 50px;
+    }
+    
+    #solar-system-gif {
+        width: 400px;
+    }
+        
+    #solar-system p{
+        font-size: 18px;
+        width: 70%;
+    }
+
+    /*planet*/
+    #planets {
+        align-items: center;
+    }
+    
+    #planet-header {
+        margin: 20px 0;
+        font-size: 40px;
+    }  
+
+    .planet1 {
+        width: 80%;
+    }
+    
+    .planet2 {
+        width: 80%;
+        transform: translate(0,0);
+    }
+
+    .planet1 h1, .planet2 h1 {
+        font-size: 30px;
+    }
+
+    /*about*/ 
+    #about-header {
+        margin: 10px 10px 0 10px;
+        font-size: 40px;
+    }
+    
+    #about-desc {
+        transform: translate(20%, 30%);
+        width: 80%;
+    }
+    
+    #about-desc h1 {
+        font-size: 30px;
+    }
+    
+    #about-desc h2 {
+        margin: 0 0 10px 0;
+        font-size: 15px;
+    }
+
+    #about-desc p {
+        font-size: 10px;
+    }
+    
+    #about-desc ul {
+        margin: 10px 0 0 0;
+    }
+    
+    #about-desc li {
+        margin: 0 0 0 10px;
+        border-radius: 45%;
+    }
+    
+    #about-img {
+        height: 400px;  
+    }
+}
+
+@media only screen and (max-width: 594px) {
+    /*navbar*/
+    nav .btn-navbar {
+        margin: 0 10px;
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    .navbar-group--close {
+        display: none!important;
+    }
+
+
+    /*home*/
+    #home-text h1 {
+        font-size: 40px;
+        margin: 15px 0;
+    }
+    
+    #home-text p {
+        font-size: 12px;
+        margin: 20px 0;
+    }
+    
+    #home-text-btn {
+        font-size: 15px;
+    }
+
+    /*solar-system*/    
+    #solar-system-header {
+        font-size: 45px;
+    }
+        
+    #solar-system-gif {
+        width: 360px;
+    }
+            
+    #solar-system p{
+        font-size: 16px;
+        width: 80%;
+    }
+
+    /*planet*/
+    #planet-header {
+        font-size: 35px;
+    }
+    
+    .planet1 h1, .planet2 h1 {
+        font-size: 25px;
+    }
+    
+    /*about*/
+    #about-header {
+        font-size: 30px;
+    }
+    
+    #about-desc {
+        transform: translate(20%, 30%);
+        width: 80%;
+    }
+    
+    #about-desc h1 {
+        font-size: 20px;
+    }
+    
+    #about-desc h2 {
+        margin: 0 0 10px 0;
+        font-size: 10px;
+    }
+
+    #about-desc p {
+        font-size: 8px;
+    }
+    
+    #about-desc ul {
+        margin: 10px 0 0 0;
+    }
+
+    #about-desc img {
+        width: 24px;
+    }
+    
+    #about-img {
+        height: 250px;  
+        margin: 0 0 0 20px;
+    }
+}
+
+@media only screen and (max-width: 492px) {
+    #navbar-icon {
+        width: 30px;
+    }
+
+    .navbar-group--close {
+        display: none!important;
+    }
+
+    /*solar-system*/
+    #solar-system-header {
+        font-size: 38px;
+    }
+        
+    #solar-system-gif {
+        width: 300px;
+    }
+            
+    #solar-system p{
+        font-size: 16px;
+        width: 90%;
+    }
+
+    /*planet*/
+    #planet-header {
+        font-size: 30px;
+    }
+    
+    .planet1 h1, .planet2 h1 {
+        font-size: 25px;
+    }
+    
+    .planet1 img, .planet2 img {
+        width: 92px;
+    }
+    
+    .planet1 p, .planet2 p {
+        font-size: 12px;
+    }
+    
+    #planet-btn {
+        font-size: 18px;
+    }
+
+    /*about*/    
+    #about-header {
+        font-size: 25px;
+    }
+    
+    #about-desc {
+        transform: translate(20%, 10%);
+        width: 80%;
+    }
+    
+    #about-desc img {
+        width: 18px;
+    }
+    
+    #about-img {
+        height: 200px;  
+        margin: 0 0 0 20px;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+
+    nav .btn-navbar {
+        margin: 0 5px;
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    .navbar-group--close {
+        display: none!important;
+    }
+
+    /*home*/
+    #home-text h1 {
+        font-size: 25px;
+        margin: 10px 0;
+    }
+    
+    #home-text p {
+        font-size: 10px;
+        margin: 15px 0;
+    }
+    
+    #home-text-btn {
+        font-size: 15px;
+    }
+
+    /*solar-system*/
+    #solar-system-header {
+        font-size: 30px;
+    }
+        
+    #solar-system-gif {
+        width: 270px;
+    }
+            
+    #solar-system p{
+        font-size: 12px;
+        width: 90%;
+    }
+
+    /*planet*/
+    #planet-header {
+        font-size: 25px;
+    }
+
+    .planet1 h1, .planet2 h1 {
+        font-size: 20px;
+    }
+
+    .planet1 img, .planet2 img {
+        width: 78px;
+    }
+
+    .planet1 p, .planet2 p {
+        font-size: 10px;
+    }
+
+    #planet-btn {
+        font-size: 15px;
+    }
+
+    /*about*/    
+    #about-header {
+        margin: 10px 10px 0 10px;
+        font-size: 15px;
+    }
+    
+    #about-desc {
+        transform: translate(10%, 10%);
+        width: 90%;
+    }
+
+    #about-desc h1 {
+        font-size: 12px;
+    }
+    
+    #about-desc h2 {
+        margin: 0 0 5px 0;
+        font-size: 8px;
+    }
+
+    #about-desc p {
+        font-size: 5px;
+    }
+    
+    #about-desc ul {
+        margin: 5px 0 0 0;
+    }
+    
+    #about-desc li {
+        margin: 0 0 0 5px;
+    }
+    
+    #about-desc img {
+        width: 12px;
+    }
+    
+    #about-img {
+        height: 150px;  
+        margin: 0 0 0 20px;
+    }
+}
